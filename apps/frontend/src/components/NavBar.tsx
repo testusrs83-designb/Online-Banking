@@ -7,7 +7,7 @@ const NavBar: React.FC = () => (
         {/* Wells Fargo logo placeholder */}
         <span className="text-xl font-bold text-accent">WF</span>
       </div>
-      <span className="text-2xl font-bold tracking-wide">Wells Fargo</span>
+  <span className="text-2xl font-bold tracking-wide">First City Credit Union</span>
     </div>
     <ul className="flex space-x-6 text-lg font-medium">
       <li><a href="/accounts" className="hover:text-wf-gold">Accounts</a></li>

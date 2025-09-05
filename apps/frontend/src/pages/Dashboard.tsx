@@ -16,7 +16,7 @@ const Dashboard: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
           {loadingAccounts ? (
             <div>Loading accounts...</div>
-          ) : accounts?.length ? (
+          ) : Array.isArray(accounts) && accounts.length ? (
             accounts.map((acc: any) => (
               <div key={acc.number} className="bg-white rounded-lg shadow p-6 border-l-8 border-primary">
                 <div className="text-lg font-semibold text-gray-700">{acc.type} Account</div>
@@ -32,7 +32,7 @@ const Dashboard: React.FC = () => {
         <div className="bg-white rounded-lg shadow p-6">
           {loadingTx ? (
             <div>Loading transactions...</div>
-          ) : transactions?.length ? (
+          ) : Array.isArray(transactions) && transactions.length ? (
             <table className="w-full text-left">
               <thead>
                 <tr>
@@ -62,5 +62,4 @@ const Dashboard: React.FC = () => {
   );
 };
 
-export default Dashboard;
 export default Dashboard;

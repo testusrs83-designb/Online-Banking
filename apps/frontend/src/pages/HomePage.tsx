@@ -15,7 +15,7 @@ const HomePage: React.FC = () => {
             {/* Wells Fargo logo placeholder */}
             <span className="text-3xl font-bold text-accent">WF</span>
           </div>
-          <h1 className="text-4xl font-bold text-primary">Wells Fargo</h1>
+          <h1 className="text-4xl font-bold text-primary">First City Credit Union</h1>
         </div>
         <p className="text-lg text-gray-700 mb-4">Banking made easy. Secure. Reliable. Trusted.</p>
         {isLoading ? (
@@ -59,7 +59,7 @@ const HomePage: React.FC = () => {
           </form>
         )}
       </div>
-      <footer className="mt-8 text-sm text-gray-500">&copy; 2025 Wells Fargo Clone. For demo purposes only.</footer>
+  <footer className="mt-8 text-sm text-gray-500">&copy; 2025 First City Credit Union. For demo purposes only.</footer>
     </main>
   );
 };
