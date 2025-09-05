@@ -11,6 +11,9 @@ const PORT = process.env.PORT || 4000;
 
 app.use(express.json());
 
+import { db } from "./db";
+import * as schema from "./schema";
+
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
 });
