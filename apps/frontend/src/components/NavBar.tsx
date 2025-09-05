@@ -1,7 +1,7 @@
 import React from "react";
 
 const NavBar: React.FC = () => (
-  <nav className="bg-primary text-accent px-6 py-3 flex items-center justify-between shadow">
+  <nav className="bg-primary text-accent px-4 py-3 flex flex-wrap items-center justify-between shadow">
     <div className="flex items-center">
       <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center mr-2">
         {/* Wells Fargo logo placeholder */}
@@ -9,7 +9,7 @@ const NavBar: React.FC = () => (
       </div>
   <span className="text-2xl font-bold tracking-wide">First City Credit Union</span>
     </div>
-    <ul className="flex space-x-6 text-lg font-medium">
+  <ul className="flex flex-wrap space-x-4 sm:space-x-6 text-base sm:text-lg font-medium">
       <li><a href="/accounts" className="hover:text-wf-gold">Accounts</a></li>
       <li><a href="/transfer" className="hover:text-wf-gold">Transfer</a></li>
       <li><a href="/pay-bills" className="hover:text-wf-gold">Pay Bills</a></li>

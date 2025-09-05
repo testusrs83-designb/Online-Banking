@@ -8,10 +8,10 @@ const HomePage: React.FC = () => {
   const [password, setPassword] = useState("");
 
   return (
-    <main className="min-h-screen bg-background flex flex-col items-center justify-center">
-      <div className="w-full max-w-2xl bg-white rounded-lg shadow-lg p-8 border-t-8 border-primary">
-        <div className="flex items-center mb-6">
-          <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mr-4">
+    <main className="min-h-screen bg-background flex flex-col items-center justify-center px-2">
+      <div className="w-full max-w-2xl bg-white rounded-lg shadow-lg p-4 md:p-8 border-t-8 border-primary">
+        <div className="flex flex-col sm:flex-row items-center mb-6 gap-2">
+          <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center sm:mr-4 mb-2 sm:mb-0">
             {/* Wells Fargo logo placeholder */}
             <span className="text-3xl font-bold text-accent">WF</span>
           </div>

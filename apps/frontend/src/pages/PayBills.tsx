@@ -9,7 +9,7 @@ const PayBills: React.FC = () => {
   return (
     <div className="bg-background min-h-screen">
       <NavBar />
-      <div className="max-w-md mx-auto py-8">
+  <div className="max-w-md mx-auto py-8 px-2">
         <h2 className="text-3xl font-bold text-primary mb-6">Pay Bills</h2>
         <form className="bg-white rounded-lg shadow p-6 flex flex-col gap-4">
           <div>

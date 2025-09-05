@@ -11,9 +11,9 @@ const Dashboard: React.FC = () => {
   return (
     <div className="bg-background min-h-screen">
       <NavBar />
-      <div className="max-w-4xl mx-auto py-8">
+  <div className="max-w-4xl mx-auto py-8 px-2">
         <h2 className="text-3xl font-bold text-primary mb-6">Account Summary</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-8">
           {loadingAccounts ? (
             <div>Loading accounts...</div>
           ) : Array.isArray(accounts) && accounts.length ? (
@@ -29,7 +29,7 @@ const Dashboard: React.FC = () => {
           )}
         </div>
         <h3 className="text-xl font-bold text-primary mb-4">Recent Transactions</h3>
-        <div className="bg-white rounded-lg shadow p-6">
+  <div className="bg-white rounded-lg shadow p-4 sm:p-6">
           {loadingTx ? (
             <div>Loading transactions...</div>
           ) : Array.isArray(transactions) && transactions.length ? (
