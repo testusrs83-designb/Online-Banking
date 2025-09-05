@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import express from "express";
 import session from "express-session";
 import pgSession from "connect-pg-simple";
@@ -22,12 +23,12 @@ app.use(session({
     },
 }));
 // API routes
-import accountsRouter from "./routes/accounts";
-import transactionsRouter from "./routes/transactions";
-import transferRouter from "./routes/transfer";
-import payBillsRouter from "./routes/payBills";
-import profileRouter from "./routes/profile";
-import authRouter from "./routes/auth";
+import accountsRouter from "./routes/accounts.js";
+import transactionsRouter from "./routes/transactions.js";
+import transferRouter from "./routes/transfer.js";
+import payBillsRouter from "./routes/payBills.js";
+import profileRouter from "./routes/profile.js";
+import authRouter from "./routes/auth.js";
 app.use("/api/accounts", accountsRouter);
 app.use("/api/transactions", transactionsRouter);
 app.use("/api/transfer", transferRouter);
