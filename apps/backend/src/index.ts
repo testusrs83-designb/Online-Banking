@@ -5,6 +5,7 @@ import pgSession from "connect-pg-simple";
 import { Pool } from "pg";
 import { z } from "zod";
 
+
 const app = express();
 const PORT = process.env.PORT || 4000;
 
@@ -29,8 +30,23 @@ app.use(
   })
 );
 
+// API routes
+import accountsRouter from "./routes/accounts";
+import transactionsRouter from "./routes/transactions";
+import transferRouter from "./routes/transfer";
+import payBillsRouter from "./routes/payBills";
+import profileRouter from "./routes/profile";
+import authRouter from "./routes/auth";
+
+app.use("/api/accounts", accountsRouter);
+app.use("/api/transactions", transactionsRouter);
+app.use("/api/transfer", transferRouter);
+app.use("/api/pay-bills", payBillsRouter);
+app.use("/api/profile", profileRouter);
+app.use("/api/auth", authRouter);
+
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to First City Credit Union API" });
+  res.json({ message: "Welcome to Wells Fargo Clone API" });
 });
 
 app.listen(PORT, () => {

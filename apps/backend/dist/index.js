@@ -21,8 +21,21 @@ app.use(session({
         maxAge: 1000 * 60 * 60 * 24, // 1 day
     },
 }));
+// API routes
+import accountsRouter from "./routes/accounts";
+import transactionsRouter from "./routes/transactions";
+import transferRouter from "./routes/transfer";
+import payBillsRouter from "./routes/payBills";
+import profileRouter from "./routes/profile";
+import authRouter from "./routes/auth";
+app.use("/api/accounts", accountsRouter);
+app.use("/api/transactions", transactionsRouter);
+app.use("/api/transfer", transferRouter);
+app.use("/api/pay-bills", payBillsRouter);
+app.use("/api/profile", profileRouter);
+app.use("/api/auth", authRouter);
 app.get("/", (req, res) => {
-    res.json({ message: "Welcome to First City Credit Union API" });
+    res.json({ message: "Welcome to Wells Fargo Clone API" });
 });
 app.listen(PORT, () => {
     console.log(`Backend running on port ${PORT}`);
