@@ -1,6 +1,7 @@
 import express from "express";
 import session from "express-session";
 import pgSession from "connect-pg-simple";
+// import drizzle ORM setup in a separate file if needed
 import { Pool } from "pg";
 const app = express();
 const PORT = process.env.PORT || 4000;

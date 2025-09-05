@@ -6,8 +6,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "var(--color-primary)",
-        secondary: "var(--color-secondary)"
+        primary: "var(--color-wf-red)",
+        secondary: "var(--color-wf-gold)",
+        accent: "var(--color-wf-white)",
+        background: "var(--color-wf-bg)",
       },
       spacing: {
         'xs': '0.25rem',
