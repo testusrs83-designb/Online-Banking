@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@sentry/node": "^10.10.0",
+    "bcrypt": "^6.0.0",
+    "express-rate-limit": "^8.1.0",
+    "nodemailer": "^7.0.6"
+  }
+}
