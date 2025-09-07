@@ -1,7 +1,6 @@
 import 'dotenv/config';
 import express from "express";
 import * as Sentry from "@sentry/node";
-import { setupExpressErrorHandler } from "@sentry/node/build/types/integrations/tracing/express";
 Sentry.init({ dsn: process.env.SENTRY_DSN });
 import session from "express-session";
 import pgSession from "connect-pg-simple";
@@ -72,7 +71,6 @@ app.get("/", (req, res) => {
   res.json({ message: "Welcome to Wells Fargo Clone API" });
 });
 
-setupExpressErrorHandler(app);
 app.listen(PORT, () => {
   console.log(`Backend running on port ${PORT}`);
 });
