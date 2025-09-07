@@ -4,10 +4,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-  "dev": "ts-node --loader ts-node/esm src/index.ts",
+    "dev": "ts-node --loader ts-node/esm src/index.ts",
     "build": "tsc",
     "start": "node dist/index.js",
-    "lint": "eslint . --ext .ts"
+    "lint": "eslint . --ext .ts",
+    "migrate": "node migrate.js"
   },
   "dependencies": {
     "connect-pg-simple": "^8.0.0",
@@ -17,7 +18,11 @@
     "express-session": "^1.17.3",
     "pg": "^8.11.3",
     "ws": "^8.16.0",
-    "zod": "^3.22.4"
+    "zod": "^3.22.4",
+    "nodemailer": "^6.9.4",
+    "bcrypt": "^5.1.0",
+    "express-rate-limit": "^6.8.0",
+    "@sentry/node": "^10.10.0"
   },
   "devDependencies": {
     "@types/connect-pg-simple": "^7.0.3",
@@ -28,6 +33,6 @@
     "@typescript-eslint/parser": "^6.21.0",
     "eslint": "^8.56.0",
     "ts-node": "^10.9.2",
-  "typescript": "^5.4.5"
+    "typescript": "^5.4.5"
   }
 }
