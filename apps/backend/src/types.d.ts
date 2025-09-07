@@ -3,6 +3,7 @@ export interface User {
   id: number;
   email: string;
   password_hash: string;
+  email_verified: number;
   kyc_status: string;
   kyc_submitted_at?: string;
   created_at: string;
